@@ -20,6 +20,27 @@ $.ajaxSetup({
     }
 });
 
+function fittabletoscreen(){
+    if(jQuery(window).width()<768){
+        jQuery('table th, table td').hide();
+        jQuery('table th:first-child, table th:last-child, table td:first-child, table td:last-child').show();
+        jQuery('table').css('width', '100%');
+        jQuery('table th:first-child, table td:first-child').css('width', '20px');
+    } else {
+        jQuery('table th, table td').show();
+        jQuery('table, table th, table td').css('width', '100%');
+        jQuery('table th, table td').css('width', 'auto');
+    }
+}
+
+setInterval(function () {
+    fittabletoscreen()
+}, 500)
+
+jQuery(window).resize(function(){
+   fittabletoscreen(); 
+})
+
 function formData(data)
 {
     let validData = new FormData()
@@ -233,7 +254,6 @@ $('#social-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/social`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'name', name: 'name'},
         {data: 'url', name: 'url'},
         {data: 'logo', name: 'logo',
@@ -287,7 +307,6 @@ $('#logo-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/logo`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'name', name: 'name'},
         {data: 'icon', name: 'icon',
         "render": function (data) {        
@@ -337,7 +356,6 @@ $('#skill-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/skill`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'name', name: 'name'},
         {data: 'photo', name: 'photo',
         "render": function (data) {        
@@ -390,7 +408,6 @@ $('#portofolio-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/portofolio`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'name', name: 'name'},
         {data: 'description', name: 'description'},
         {data: 'thumbnail', name: 'thumbnail',
@@ -400,7 +417,7 @@ $('#portofolio-datatable').DataTable({
         },
         {data: 'action', name: 'action'},
     ]
-});
+})
 
 $(document).delegate('#delete-portofolio', 'click', function() {
     var id = $(this).data('id')
@@ -447,7 +464,6 @@ $('#post-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/post`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'name', name: 'name'},
         {data: 'description', name: 'description'},
         {data: 'thumbnail', name: 'thumbnail',
@@ -504,7 +520,6 @@ $('#client-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/client`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'name', name: 'name'},
         {data: 'photo', name: 'photo',
         "render": function (data) {        
@@ -567,7 +582,6 @@ $('#feedback-datatable').DataTable({
     language: language,
     ajax: `${baseUrl}/admin/feedback`,
     columns: [
-        {data: 'DT_RowIndex', name: 'DT_RowIndex'},
         {data: 'category', name: 'category'},
         {data: 'content', name: 'content'},
         {data: 'action', name: 'action'},

@@ -15,7 +15,6 @@
                   <table class="hover row-border order-column stripe" id="feedback-datatable">
                     <thead>
                         <tr>
-                            <th>{{ Auth::user()->profile->setting->language == 1 ? '#' : 'No.'}}</th>
                             <th>{{ Auth::user()->profile->setting->language == 1 ? 'Category' : 'Kategori'}}</th>
                             <th>{{ Auth::user()->profile->setting->language == 1 ? 'Feedback' : 'Ulasan' }}</th>
                             <th>{{ Auth::user()->profile->setting->language == 1 ? 'Action' : 'Aksi' }}</th>

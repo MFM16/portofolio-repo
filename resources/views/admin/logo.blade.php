@@ -18,7 +18,6 @@
                 <table class="hover row-border order-column stripe" id="logo-datatable">
                   <thead>
                       <tr>
-                          <th>{{ Auth::user()->profile->setting->language == 1 ? '#' : 'No.'}}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? 'Icon Name' : 'Nama Ikon'}}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? 'Icon' : 'Ikon' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? 'Action' : 'Aksi' }}</th>

@@ -17,7 +17,6 @@
                 <table class="hover row-border order-column stripe" id="client-datatable">
                   <thead>
                       <tr>
-                          <th>{{ Auth::user()->profile->setting->language == 1 ? '#' : 'No.' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? 'Client Name' : 'Nama Klien' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? 'Photo' : 'Foto' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? 'Action' : 'Aksi' }}</th>

@@ -17,7 +17,6 @@
                 <table class="hover row-border order-column stripe" id="social-datatable">
                   <thead>
                       <tr>
-                          <th>{{ Auth::user()->profile->setting->language == 1 ? "#" : 'No.' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Name" : 'Nama' }}</th>
                           <th>URL</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Icon" : 'Ikon' }}</th>

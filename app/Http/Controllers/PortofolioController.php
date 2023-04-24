@@ -52,7 +52,7 @@ class PortofolioController extends Controller
 
         return response()->json(
             [
-                'url' => $image->getUrl()
+                'url' => $image->getUrl('image-content')
             ]
         );
     }

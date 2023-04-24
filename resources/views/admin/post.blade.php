@@ -17,7 +17,6 @@
                 <table class="hover row-border order-column stripe" id="post-datatable">
                   <thead>
                       <tr>
-                          <th>{{ Auth::user()->profile->setting->language == 1 ? "#" : 'No.' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Post Title" : 'Judul Artikel' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Short Description Post" : 'Deskripsi Pendek Artikel' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Thumbnail" : 'Gambar' }}</th>

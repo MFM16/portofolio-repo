@@ -17,7 +17,6 @@
                 <table class="hover row-border order-column stripe" id="portofolio-datatable">
                   <thead>
                       <tr>
-                        <th>{{ Auth::user()->profile->setting->language == 1 ? "#" : 'No.' }}</th>
                         <th>{{ Auth::user()->profile->setting->language == 1 ? "Project Title" : 'Judul Proyek' }}</th>
                         <th>{{ Auth::user()->profile->setting->language == 1 ? "Short Description Project" : 'Deskripsi Pendek Proyek' }}</th>
                         <th>{{ Auth::user()->profile->setting->language == 1 ? "Thumbnail" : 'Gambar' }}</th>

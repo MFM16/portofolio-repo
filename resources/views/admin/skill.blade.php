@@ -17,7 +17,6 @@
                 <table class="hover row-border order-column stripe" id="skill-datatable">
                   <thead>
                       <tr>
-                          <th>{{ Auth::user()->profile->setting->language == 1 ? "#" : 'No.' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Name" : 'Nama' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Icon" : 'Ikon' }}</th>
                           <th>{{ Auth::user()->profile->setting->language == 1 ? "Action" : 'Aksi' }}</th>

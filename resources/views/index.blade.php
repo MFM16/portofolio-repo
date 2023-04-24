@@ -70,9 +70,9 @@
                 </div> 
                 <div class="flex flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
                     @foreach ($profile->portofolios as $portofolio)
-                        <div class="mb-12 p-4 md:w-1/2">
+                        <div class="mb-12 p-4 md:w-1/3">
                             <div class="overflow-hidden rounded-lg shadow-lg mb-2">
-                                <img class="w-full" style="height: 250px" src="{{ asset($portofolio->thumbnail) }}" alt="{{ $portofolio->slug }}">
+                                <img class="w-full" style="height: 210px;" src="{{ asset($portofolio->thumbnail) }}" alt="{{ $portofolio->slug }}">
                             </div>
                             <a href="{{ url('') }}/{{ $profile->nickname }}/portofolio/detail/{{ $portofolio->slug }}" class="text-slate-700 font-bold text-lg truncate mb-3 cursor-pointer hover:text-secondary">{{ $portofolio->name }}</a>
                             <p class="text-secondary text-sm">{{ $portofolio->description }}</p>
