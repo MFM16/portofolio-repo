@@ -62,9 +62,7 @@
                         <h4 class="mb-2 text-lg font-semibold text-primary">{{ $profile->setting->language == 1 ? "Portfolio" : "Portofolio" }}</h4>
                         <h2 class="mb-4 text-3xl font-bold text-slate-700 sm:text-4xl lg:text-5xl">{{ $profile->setting->language == 1 ? "Latest Project" : "Proyek Terbaru" }}</h2>
                         <p class="text-md font-medium text-secondary md:text-lg">
-                            {{ $profile->setting->language == 1 ? "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo
-                            enim aliquam ipsam obcaecati? Assumenda, ipsam?" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo
-                            enim aliquam ipsam obcaecati? Assumenda, ipsam?" }}
+                            {{ $profile->setting->language == 1 ? "Below are some recent projects that I have completed" : "Di bawah ini merupakan beberapa proyek terbaru yang telah saya selesaikan" }}
                         </p>
                     </div>
                 </div> 
@@ -92,9 +90,7 @@
                             <h4 class="mb-2 text-lg font-semibold text-secondary">{{ $profile->setting->language == 1 ? "Clients" : "Klien" }}</h4>
                             <h2 class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{{ $profile->setting->language == 1 ? "Collaborated with" : "Bekerja sama dengan" }}</h2>
                             <p class="text-md font-medium text-secondary md:text-lg">
-                                {{ $profile->setting->language == 1 ? "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi
-                                nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi
-                                nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?" }}
+                                {{ $profile->setting->language == 1 ? "Below are some of the clients that I have worked with on a project" : "Di bawah ini merupakan beberapa klien yang pernah bekerja sama dengan saya dalam suatu proyek" }}
                             </p>
                         </div>
                     </div>
@@ -121,7 +117,7 @@
                             <h4 class="mb-2 text-lg font-semibold text-secondary">{{ $profile->setting->language == 1 ? "Blogs" : "Tulisan" }}</h4>
                             <h2 class="mb-4 text-3xl font-bold text-primary sm:text-4xl lg:text-5xl">{{ $profile->setting->language == 1 ? "Latest Post" : "Tulisan terbaru" }}</h2>
                             <p class="text-md font-medium text-secondary md:text-lg">
-                                {{ $profile->setting->language == 1 ? "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?" }}
+                                {{ $profile->setting->language == 1 ? "Below are some recent posts or articles that I have completed" : "Di bawah ini merupakan beberapa tulisan atau artikel terbaru yang telah saya selesaikan" }}
                             </p>
                         </div>
                         <div class="flex flex-wrap">
